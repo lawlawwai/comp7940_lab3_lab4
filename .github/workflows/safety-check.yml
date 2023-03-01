@@ -7,11 +7,16 @@ on:
 
 env:
   DEP_PATH: ../../requirements.txt
+  GITHUB_WORKSPACE: ./
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: print path
+        run: pwd
+      - name: print working path
+        run: echo ${GITHUB_WORKSPACE}/${DEP_PATH}
       - name: Check out master
         uses: actions/checkout@master
 
