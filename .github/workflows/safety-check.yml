@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  DEP_PATH: ../../requirements.txt
+  DEP_PATH: ./requirements.txt
   GITHUB_WORKSPACE: ./
 
 jobs:
