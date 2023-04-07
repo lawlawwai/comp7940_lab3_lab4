@@ -1,0 +1,11 @@
+version: '3'
+services:
+  chatbot:
+    image: 7940image
+    environment:
+      - ACCESS_TOKEN=6295975720:AAHW7zhliJILtZQYHg1EUtAdwDyKVCBbbHU
+      - HOST=redis-17542.c8.us-east-1-4.ec2.cloud.redislabs.com
+      - PASSWORD=Password123.
+      - REDISPORT=17542
+      - USERNAME=lawlawwai
+    entrypoint: python chatbot.py
